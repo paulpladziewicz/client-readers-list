@@ -1,0 +1,12 @@
+.centerForDiv {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.centerDiv {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

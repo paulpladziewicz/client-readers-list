@@ -1,0 +1,26 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    list-style-type: none;
+}
+.navLinks li {
+    margin-left: 1rem;
+}
+
+.navLinks li a {
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.logo span {
+    color: darkviolet;
+}
