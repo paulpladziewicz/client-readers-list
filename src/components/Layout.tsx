@@ -1,16 +1,15 @@
-import React from "react";
-import styles from 'styles/Globals.module.css';
-import { Navbar } from "components";
+import React from 'react';
+import { Navbar } from 'components';
 
 type Props = {
-    children: React.ReactNode;
+  children: React.ReactNode;
 };
 
 export const Layout: React.FC<Props> = ({ children }) => {
-    return (
-        <div className={styles.globals}>
-            <Navbar />
-            {children}
-        </div>
-    );
-}
+  return (
+    <div>
+      <Navbar />
+      {children}
+    </div>
+  );
+};

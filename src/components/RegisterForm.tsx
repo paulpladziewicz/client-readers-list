@@ -4,21 +4,35 @@ import { Formik } from 'formik';
 import * as yup from 'yup';
 import axios from 'axios';
 import { API_ROUTES } from 'constants/apiRoutes';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { login } from 'redux-toolkit/features/userSlice';
+import styles from 'styles/RegisterForm.module.css';
 
 export const RegisterForm: React.FC = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const validationSchema = yup.object().shape({
-    first_name: yup.string().required('First name is required.').max(30, 'First name cannot be more than 30 characters.'),
-    last_name: yup.string().required('Last name is required.').max(30, 'Last name cannot be more than 30 characters.'),
-    email: yup.string().email('Please enter a valid email address.').required('Email is required.'),
-    password: yup.string().required('Password is required.').min(8, 'Password needs to be at least 8 characters.'),
+    first_name: yup
+      .string()
+      .required('First name is required.')
+      .max(30, 'First name cannot be more than 30 characters.'),
+    last_name: yup
+      .string()
+      .required('Last name is required.')
+      .max(30, 'Last name cannot be more than 30 characters.'),
+    email: yup
+      .string()
+      .email('Please enter a valid email address.')
+      .required('Email is required.'),
+    password: yup
+      .string()
+      .required('Password is required.')
+      .min(8, 'Password needs to be at least 8 characters.'),
     confirmPassword: yup
       .string()
+      .required('Please confirm your password.')
       .oneOf(
         [yup.ref('password'), null],
         'Passwords do not match. Please try again.'
@@ -26,7 +40,8 @@ export const RegisterForm: React.FC = () => {
   });
 
   return (
-      <CenteredDiv>
+    <CenteredDiv>
+      <div className={styles.form}>
         <Logo className='mb-4' />
         <Formik
           initialValues={{
@@ -51,9 +66,9 @@ export const RegisterForm: React.FC = () => {
                 dispatch(login(res.data.user));
                 localStorage.setItem('token', res.data.token);
               })
-                .then(() => {
-                    navigate('/');
-                })
+              .then(() => {
+                navigate('/');
+              })
               .catch((err) => {
                 console.log(err);
               });
@@ -137,6 +152,7 @@ export const RegisterForm: React.FC = () => {
             </form>
           )}
         </Formik>
-      </CenteredDiv>
+      </div>
+    </CenteredDiv>
   );
 };

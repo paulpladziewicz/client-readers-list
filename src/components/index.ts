@@ -2,7 +2,8 @@ export * from './Auth';
 export * from './Button';
 export * from './ButtonLink';
 export * from './CenteredDiv';
-export * from './Home'
+export * from './Dashboard';
+export * from './Home';
 export * from './Input';
 export * from './Layout';
 export * from './LoginForm';

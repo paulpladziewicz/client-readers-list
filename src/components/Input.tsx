@@ -1,5 +1,6 @@
 import React, { HTMLInputTypeAttribute } from 'react';
 import classNames from 'classnames';
+import styles from 'styles/Input.module.css';
 
 interface Props {
   label?: string;
@@ -26,16 +27,20 @@ export const Input: React.FC<Props> = ({
   onBlur,
   autocomplete
 }) => {
-  const divStyles = classNames(className);
+  const divStyles = classNames(styles.inputContainer, className);
+  const inputStyles = classNames(styles.input, 'mb-2');
 
   const renderErrorMessage = error ? (
-    <div>{errorMessage}</div>
+    <div className={styles.error}>{errorMessage}</div>
   ) : null;
 
   return (
     <div className={divStyles}>
-      <label htmlFor={name}>{label}</label>
+      <label className='mb-2' htmlFor={name}>
+        {label}
+      </label>
       <input
+        className={inputStyles}
         type={type}
         id={name}
         name={name}

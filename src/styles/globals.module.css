@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+:global(*, :before, :after) {
+    box-sizing: border-box;
+}
+
+:global(body) {
+    min-width: 360px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+:global(.mb-6) {
+    margin-bottom: 1.5rem;
+}
+
+:global(.mb-4) {
+    margin-bottom: 1rem;
+}
+
+:global(.mb-2) {
+    margin-bottom: 0.5rem;
+}

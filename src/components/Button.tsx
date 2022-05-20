@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from 'styles/Button.module.css';
 
 interface Props {
   text: string;
@@ -17,6 +18,7 @@ export const Button: React.FC<Props> = ({
 }) => {
   return (
     <button
+      className={styles.button}
       type={type}
       onSubmit={onSubmit}
       disabled={disabled}

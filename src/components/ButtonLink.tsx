@@ -7,7 +7,5 @@ interface Props {
 }
 
 export const ButtonLink: React.FC<Props> = ({ text, href }) => {
-  return (
-      <a className={styles.link}>{text}</a>
-  );
+  return <a className={styles.link}>{text}</a>;
 };

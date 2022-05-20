@@ -1,0 +1,12 @@
+:global(.h1) {
+    font-size: 4rem;
+}
+
+:global(p.lead) {
+    margin: 0;
+    font-size: 2rem;
+}
+
+:global(.text-center) {
+    text-align: center;
+}

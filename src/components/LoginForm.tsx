@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import { Logo, Input, Button, CenteredDiv } from 'components';
 import { Formik } from 'formik';
 import * as yup from 'yup';
@@ -9,7 +9,10 @@ import { useDispatch } from 'react-redux';
 import { login } from 'redux-toolkit/features/userSlice';
 
 const validationSchema = yup.object().shape({
-  email: yup.string().email('Please enter a valid email address.').required('Email is required'),
+  email: yup
+    .string()
+    .email('Please enter a valid email address.')
+    .required('Email is required'),
   password: yup.string().required('Password is required')
 });
 
@@ -19,7 +22,7 @@ export const LoginForm: React.FC = () => {
 
   return (
     <CenteredDiv>
-      <div style={{width: '300px'}}>
+      <div style={{ width: '400px' }}>
         <Logo className='mb-4' />
         <Formik
           initialValues={{ email: '', password: '' }}
@@ -34,7 +37,7 @@ export const LoginForm: React.FC = () => {
               .then((res) => {
                 localStorage.setItem('token', res.data.token);
                 dispatch(login(res.data.user));
-                navigate("/");
+                navigate('/dashboard');
               })
               .catch((err) => {
                 console.log(err);
@@ -84,6 +87,6 @@ export const LoginForm: React.FC = () => {
           )}
         </Formik>
       </div>
-      </CenteredDiv>
+    </CenteredDiv>
   );
 };

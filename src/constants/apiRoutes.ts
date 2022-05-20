@@ -5,5 +5,5 @@ export const API_ROUTES = {
   LOGIN: BASE_URL + '/login',
   LOGOUT: BASE_URL + '/logout',
   USER: BASE_URL + '/user',
-  NY_BEST_SELLERS: BASE_URL + '/nytimes-bestsellers',
+  NY_BEST_SELLERS: BASE_URL + '/nytimes-bestsellers'
 };

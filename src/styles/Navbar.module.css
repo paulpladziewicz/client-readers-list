@@ -19,8 +19,5 @@
 
 .logo {
     font-weight: bold;
-}
-
-.logo span {
-    color: darkviolet;
+    font-size: 2rem;
 }

@@ -7,7 +7,8 @@
     "build:dev": "rimraf dist && npx webpack --mode=development",
     "build:prod": "rimraf dist && npx webpack --mode=production",
     "dev": "npm run build:dev && npx webpack-dev-server --hot --mode=development",
-    "test": "jest"
+    "test": "jest",
+    "prettier": "prettier --write '**/*.{ts,tsx}'"
   },
   "keywords": [],
   "author": "Paul Pladziewicz",
@@ -27,6 +28,7 @@
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
     "mini-css-extract-plugin": "^2.6.0",
+    "prettier": "2.6.2",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.1",
     "ts-loader": "^9.2.6",

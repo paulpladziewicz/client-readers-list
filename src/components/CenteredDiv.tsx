@@ -8,7 +8,7 @@ type Props = {
 export const CenteredDiv: React.FC<Props> = ({ children }) => {
   return (
     <div className={styles.centeredDiv}>
-        <div className={styles.centeredDivInner}>{children}</div>
+      <div className={styles.centeredDivInner}>{children}</div>
     </div>
   );
 };
