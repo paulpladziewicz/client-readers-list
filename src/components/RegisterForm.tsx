@@ -67,7 +67,7 @@ export const RegisterForm: React.FC = () => {
                 localStorage.setItem('token', res.data.token);
               })
               .then(() => {
-                navigate('/');
+                navigate('/dashboard');
               })
               .catch((err) => {
                 console.log(err);

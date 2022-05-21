@@ -21,7 +21,7 @@ export const Navbar = () => {
       return (
         <ul className={styles.navLinks}>
           <li>
-            <NavLink to='/register'>Dashboard</NavLink>
+            <NavLink to='/dashboard'>Dashboard</NavLink>
           </li>
           <li>
             <button onClick={handleLogout}>Logout</button>
@@ -45,7 +45,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>
-        Readers<span className='text-indigo-700'>List</span>
+          <NavLink to='/'>Readers<span className='text-indigo-700'>List</span></NavLink>
       </div>
       {renderAuthButtons()}
     </nav>

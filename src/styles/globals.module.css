@@ -13,6 +13,14 @@
     font-family: 'Inter', sans-serif;
 }
 
+:global(a) {
+    text-decoration: none;
+}
+
+:global(a:visited) {
+    color: inherit;
+}
+
 :global(.mb-6) {
     margin-bottom: 1.5rem;
 }
