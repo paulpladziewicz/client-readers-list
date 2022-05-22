@@ -8,5 +8,9 @@ interface Props {
 }
 export const Logo: React.FC<Props> = ({ className }) => {
   const divStyles = classNames(styles.logo, 'text-center', className);
-  return <div className={divStyles}><NavLink to='/'>ReadersList</NavLink></div>;
+  return (
+    <div className={divStyles}>
+      <NavLink to='/'>ReadersList</NavLink>
+    </div>
+  );
 };

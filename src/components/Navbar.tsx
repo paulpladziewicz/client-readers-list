@@ -45,7 +45,9 @@ export const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>
-          <NavLink to='/'>Readers<span className='text-indigo-700'>List</span></NavLink>
+        <NavLink to='/'>
+          Readers<span className='text-indigo-700'>List</span>
+        </NavLink>
       </div>
       {renderAuthButtons()}
     </nav>

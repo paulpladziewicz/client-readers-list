@@ -7,16 +7,16 @@ import { Auth, Home, Dashboard, LoginForm, RegisterForm } from 'components';
 const App = () => {
   return (
     <Provider store={store}>
-      <Auth>
-        <BrowserRouter>
+      <BrowserRouter>
+        <Auth>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/dashboard' element={<Dashboard />} />
             <Route path='login' element={<LoginForm />} />
             <Route path='register' element={<RegisterForm />} />
           </Routes>
-        </BrowserRouter>
-      </Auth>
+        </Auth>
+      </BrowserRouter>
     </Provider>
   );
 };
