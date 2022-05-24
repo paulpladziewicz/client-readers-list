@@ -18,6 +18,7 @@
     "@types/mongoose": "^5.11.97",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
+    "@types/react-modal": "^3.13.1",
     "@types/react-redux": "^7.1.22",
     "@types/yup": "^0.29.13",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
@@ -45,6 +46,7 @@
     "formik": "^2.2.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-modal": "^3.15.1",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.2",
     "yup": "^0.32.11"

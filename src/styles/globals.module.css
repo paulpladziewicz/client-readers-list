@@ -21,6 +21,10 @@
     color: inherit;
 }
 
+:global(ul) {
+    list-style-type: none;
+}
+
 :global(.mb-6) {
     margin-bottom: 1.5rem;
 }

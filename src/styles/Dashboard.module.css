@@ -1,0 +1,17 @@
+.readingList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.readingList h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.buttonList {
+    display: flex;
+}
+.buttonList li {
+    margin-right: 1rem;
+}

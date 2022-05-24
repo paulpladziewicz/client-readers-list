@@ -45,7 +45,7 @@ export const Auth: React.FC<Props> = ({ children }) => {
         }
       })
       .then((res) => {
-        dispatch(login(res.data.user));
+        dispatch(login(res.data));
       })
       .catch(() => {
         localStorage.removeItem('token');
