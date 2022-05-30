@@ -7,7 +7,7 @@
     "build:dev": "rimraf dist && npx webpack --mode=development",
     "build:prod": "rimraf dist && npx webpack --mode=production",
     "dev": "npm run build:dev && npx webpack-dev-server --hot --mode=development",
-    "test": "jest",
+    "test": "npx jest",
     "prettier": "prettier --write '**/*.{ts,tsx}'"
   },
   "keywords": [],
