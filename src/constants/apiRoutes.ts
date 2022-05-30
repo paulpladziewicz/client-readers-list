@@ -1,4 +1,6 @@
-const BASE_URL = 'http://localhost:5003';
+import { getBaseUrl } from 'utils';
+
+const BASE_URL = `${getBaseUrl()}/api`;
 
 export const API_ROUTES = {
   REGISTER: BASE_URL + '/register',
