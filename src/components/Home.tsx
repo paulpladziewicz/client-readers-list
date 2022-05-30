@@ -11,6 +11,7 @@ export const Home = () => {
             Helping Readers Plan Their Reading In An Organized Fashion.
           </p>
           <p>Create a free account today.</p>
+          <p>Created by <a href='https://paulpladziewicz.com'>Paul Pladziewicz</a></p>
         </div>
       </main>
     </Layout>
