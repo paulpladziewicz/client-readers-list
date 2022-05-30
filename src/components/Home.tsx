@@ -10,6 +10,7 @@ export const Home = () => {
           <p className='lead'>
             Helping Readers Plan Their Reading In An Organized Fashion.
           </p>
+          <p>Create a free account today.</p>
         </div>
       </main>
     </Layout>
