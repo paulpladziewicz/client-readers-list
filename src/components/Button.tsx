@@ -15,7 +15,7 @@ export const Button: React.FC<Props> = ({
   text,
   onSubmit,
   onClick,
-  type,
+  type = 'button',
   disabled
 }) => {
   return (

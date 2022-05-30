@@ -72,10 +72,12 @@ export const Dashboard = () => {
 
         <table>
           <thead>
-            <th style={{ width: '25%' }}>Order</th>
-            <th style={{ width: '25%' }}>Title</th>
-            <th style={{ width: '25%' }}>Author</th>
-            <th style={{ width: '25%' }}>Current Page</th>
+            <tr>
+              <th style={{ width: '25%' }}>Order</th>
+              <th style={{ width: '25%' }}>Title</th>
+              <th style={{ width: '25%' }}>Author</th>
+              <th style={{ width: '25%' }}>Current Page</th>
+            </tr>
           </thead>
         </table>
       </main>
