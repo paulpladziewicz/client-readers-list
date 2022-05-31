@@ -5,7 +5,10 @@ export const getBaseUrl = () => {
   const port = ':5003';
 
   // production hostname
-  if (hostname === 'freereaderslist.com') {
+  if (
+    hostname === 'freereaderslist.com' ||
+    hostname === 'www.freereaderslist.com'
+  ) {
     return `${protocol}//${hostname}`;
   }
 
