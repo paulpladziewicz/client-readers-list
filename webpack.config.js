@@ -1,4 +1,5 @@
 const path = require('path');
+const { SourceMapDevToolPlugin } = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin") ;
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require('terser-webpack-plugin');
@@ -7,6 +8,9 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 module.exports = {
     entry: './src/index.tsx',
     plugins: [
+        new SourceMapDevToolPlugin({
+            filename: "[file].map"
+        }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src/public/index.html"),
         }),
